@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <!-- OPIS STRONY, O CZYM ONA JEST -->
+    <meta name="description" content="Biuro Projektowe Around Design. Martyna Pietras - architekt, Bielsko-Biała, architekt wnętrz, architekt krajobrazu">
+    
+    <!-- HASŁA ZWIĄZANE ZE STRONĄ, DZIAŁALNOŚCIĄ POD WYSZUKIWANIE -->
+    <meta name="keywords" content="architekt, architektura architekt wnętrz, biuro, biuro projektowe, studio projektowe, pracownia, wizualizacje, rzudy 3D, wizualizacje wnętrz, wizualizacje zewnętrzne, wizualizacje przyrody, wizualizacje produktu, wnętrza, budynki,  projektowanie, projektowanie wnętrz, projekty, projektanci, domy mieszkalne, budynki, Pietras, Martyna, Martyna Pietras, Bielsko-Biała, architekt w Bielsku">
+    
+    <link rel="shortcut icon" href="images/icon-arounddesign.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- KTO JEST AUTOREM TEJ STRONKI -->
+    <meta name="author" content="Piotr Raszka">
+    
+    
+<!--    CZCIONKA      -->
+   <link href="https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext" rel="stylesheet">
+   
+<!--   <style>@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');</style>-->
+    
+    
+    <!-- SITE TITLE -->
+    <title>Around Design Biuro Projektowe</title>
+    
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="scripts/css.css" type="text/css"> -->
+    <style type="text/css">
+        
+        
+       
+        * {
+/*            padding: 0px 5px;*/
+            margin: 0px 5px;
+            max-width: 2800px;
+        }
+        
+        
+        #site {
+            position: relative;
+            margin: 0 auto;
+/*            border: 1px solid black; */
+            
+        }
+        
+        /* NAGŁÓWEK */
+        #heading {
+            position: fixed;
+            margin: 0 auto;
+            width: 100%;
+/*            max-width: 1980px;*/
+            min-width: 710px;
+            z-index: 1;
+            background-color: white;
+            opacity: 0.8;
+            border-bottom: 1px solid #bf984d;
+/*            border: 1px solid grey;*/
+        }
+        img.logo {
+            position: relative;
+            border: 0px;
+            width: 250px;
+            height: auto;
+            left: 25px;
+            margin-top: 8px;
+        }
+        /* KONIEC NAGŁÓWKA */
+        
+        /* MENU */
+     
+        #menu {
+            position: absolute;
+            margin-left: 250px;
+            margin-top: -70px;
+            right: 10%;
+            
+/*            padding: 15px;*/
+/*            border: 1px solid pink;*/
+        }
+        
+        #menu_list {            
+            position: relative;
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            height: 2em;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Raleway', monospace, sans-serif, serif;
+            font-weight: bold;
+            
+/*            border: 1px solid blue;*/
+        }
+        
+        
+        #menu_list > li {
+            float: left;
+            width: 150px;
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        #menu_list a:link, a:visited {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+        }
+        #menu_list li a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0 5px;
+        }
+        
+        #menu_list > li:hover > a {
+            display: inline-block;
+            color: white;
+        }
+        
+        #menu_list > li:hover {
+            background-color: #bf984d;
+            height: 25px;
+            padding: 5px;
+            width: 150px;            
+        }
+        
+        
+        #menu_list > li > ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 7px 0 0 0;
+            display: none;
+        }
+        
+        
+        #menu_list > li > ul > li {
+            background-color: white;
+            margin-left: -5px;
+            margin-top: 4px;
+            padding: 10px 10px 10px 0;
+            opacity: 0.9;
+            width: 150px;
+/*            border: 1px solid black;*/
+            
+        }
+        
+        #menu_list > li > ul > li:hover {
+            background-color: #bf984d;
+            width: 150px;
+/*            background-image: url(images/icon-menu-hover.png);*/
+            
+        }
+        
+                #menu_list > li > ul > li:hover a {
+            color: white;
+                    text-align: center;
+/*            background-image: url(images/icon-menu-hover.png);*/
+            
+        }
+        
+        #menu_list > li:hover > ul {
+            display: inline-block;
+        }
+        
+
+        
+            #menu_list a:link, a:visited {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+        }
+        
+
+
+                /* KONIEC MENU ROZWIJALNEGO */
+        
+
+        
+              /* ZAWARTOŚĆ STRONY INTERNETOWEJ */
+        
+        #content {
+            position: relative;
+            margin-left: auto;
+            width: 100%;
+            min-width: 710px;
+/*            border: 1px solid red;    */
+        }
+  
+        #head_content img {
+            position: relative;
+            margin: 0px auto 0px auto;
+            max-width: 100%;
+            min-width: 710px;
+            z-index: -1;  
+/*            border: 1px solid violet;*/
+        }
+            #about_me {
+                position: relative;
+                width: 1235px;
+                min-width: 710px;
+                padding-top: 90px;
+                margin: 0px auto 0px auto;
+            }
+
+                .text_heading {
+                    position: relative;
+                    margin-top: 0px;
+                    font-family: 'Raleway', monospace, sans-serif, serif;
+                    font-size: 22px;
+                    float: left;
+                    letter-spacing: 5px;
+                    font-weight: bold;
+                    border-bottom: 3px solid #bf984d;
+                    width: 1235px;
+/*                    text-transform:uppercase;*/
+                }
+
+                #my_photo img {
+                    position: relative;
+                    margin-top: 100px;
+/*                    margin-left: -185px;*/
+                    width: 310px;
+                    float: left;    
+                }
+        
+                #my_name {
+                    position:relative;
+                    font-family: 'Raleway', monospace, sans-serif, serif;
+                    margin-top: 150px;
+/*                    padding-top: 60px;*/
+                    margin-left: 340px;
+/*                    padding-left: 340px;*/
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                }
+
+                .text_site {
+                    position: relative;
+                    margin-top: 20px;
+                    margin-left: 340px;
+                    text-align: justify;
+                    font-size: 20px;
+                    font-family: 'Raleway', monospace, sans-serif, serif;
+                    line-height: 150%;
+
+                }
+
+                /* MOJE MOTTO */
+                #background_motto img {
+                    position: relative;
+                    padding-top: 50px;
+                    width: 100%;
+                    height: 150px;
+                    opacity: 0.6;
+                }
+                .my-motto {
+                    position: relative;
+                    top: -125px;
+                    margin-left: 35px;
+                    color: black;
+                    font-size: 28px;
+                    font-weight: bold;
+                    text-align: justify;
+                    max-width: 1150px;
+                    letter-spacing: 3px;
+                    font-family: 'Raleway', monospace, sans-serif, serif;
+                    
+                }
+
+                .text_site_continue {
+                    position: relative;
+                    margin-top: -50px;
+                    text-align: justify;
+                    font-size: 20px;
+                    font-family: 'Raleway', monospace, sans-serif, serif;
+                    line-height: 150%;
+                }
+
+        
+        
+        
+        
+        
+        
+        
+        
+                                                    /* OFERTA */
+        
+        #offer {
+                position: relative;
+                width: 1235px;
+                height: 100%;
+                padding-top: 90px;
+                margin: 0px auto;
+/*                border: 1px solid red;*/
+        }
+        
+                /* UKŁAD IKON W OFERCIE */
+                #offer_category {
+                    position: relative;
+                    margin: 0px auto 50px auto;
+                    width: 1235px;
+                    display: inline-block;
+/*                    border: 1px solid green;*/
+                }
+        
+        
+/*
+        #offer_category a:link a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+         #offer_category a:hover a:active {
+            text-decoration: none;
+            color: black;
+        }
+*/
+
+
+                /* text pod ikonami */
+                .text_offer {
+                    position: relative;
+                    margin-top: 370px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: 'Raleway', monospace, sans-serif, serif;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    color: black;
+                }
+        
+        
+
+                /* IKONA WIZUALIZACJI ZEWNĘTRZNYCH */
+        
+        
+        
+            #icon_projects_architecture {
+                 background-image: url(images/icon-projects-architecture.png);
+                 width: 350px;
+                 height: 343px;
+                 margin: -20px 20px 100px 20px;
+                 background-repeat: no-repeat;
+                 float: left;
+                display: inline-block;
+            }
+
+            #icon_projects_architecture:hover {
+                    position: relative;
+                    width: 350px;
+                    height: 343px;
+                    background-image: url(images/icon-projects-architecture-hover.png);
+                    background-repeat: no-repeat;
+            }
+        
+                #icon_indoor {
+                    background-image: url(images/icon-indoor.png);
+                    width: 350px;
+                    height: 343px;
+                    margin: -20px 20px 100px 20px;
+                    background-repeat: no-repeat;
+                    float: left;
+                }      
+        
+                #icon_indoor:hover {
+                    position: relative;
+                    width: 350px;
+                    height: 343px;
+                    background-image: url(images/icon-indoor-hover.png);
+                    background-repeat: no-repeat;
+            }
+        
+        
+                #icon_interios {
+                    background-image: url(images/icon-interios.png);
+                    width: 350px;
+                    height: 343px;
+                    margin: -20px 20px 100px 20px;
+                    background-repeat: no-repeat;
+                    float: left;
+                }      
+        
+                #icon_interios:hover {
+                    position: relative;
+                    width: 350px;
+                    height: 343px;
+                    background-image: url(images/icon-interios-hover.png);
+                    background-repeat: no-repeat;
+            }
+
+                #icon_visualization_indoor {
+                    background-image: url(images/icon-visualization-indoor.png);
+                    width: 350px;
+                    height: 343px;
+                    margin: 20px 20px 40px 20px;
+                    background-repeat: no-repeat;
+                    float: left;
+        }
+        
+                #icon_visualization_indoor:hover {
+                    position: relative;
+                    width: 350px;
+                    height: 343px;
+                    background-image: url(images/icon-visualization-indoor-hover.png);    
+                    background-repeat: no-repeat;
+            }
+        
+
+
+            #icon_visualization_nature {
+                background-image: url(images/icon-nature.png);
+                width: 350px;
+                height: 343px;
+                margin: 20px 20px 40px 20px;
+                background-repeat: no-repeat;
+                float: left;
+            }
+
+            #icon_visualization_nature:hover {
+                position: relative;
+                width: 350px;
+                height: 343px;
+                background-image: url(images/icon-nature-hover.png);
+                background-repeat: no-repeat;
+                }
+
+            #icon_visualization_product {
+                background-image: url(images/icon-product.png);
+                width: 350px;
+                height: 343px;
+                margin: 20px 20px 40px 20px;
+                background-repeat: no-repeat;
+                float: left;
+            }
+
+            #icon_visualization_product:hover {
+                position: relative;
+                width: 350px;
+                height: 343px;
+                background-image: url(images/icon-product-hover.png);
+                background-repeat: no-repeat;
+                }
+
+
+
+        
+                                                        /*REALIZACJE PRZYKŁADY*/
+        
+        #projects_realizated {
+                position: relative;
+                width: 1235px;
+                min-width: 610px;
+                height: 100%;      
+                padding-top: 90px;
+                margin: 0px auto 0px auto;    
+/*                border: 1px solid blue;*/
+                }
+        
+               #projects_outside {
+                    position: relative;
+                    width: 100%;
+                   padding-top: 90px;
+                    margin: 0px auto 0 auto;
+                   border-bottom: 1px solid #bf984d;
+/*                    border: 1px solid red;    */
+                }
+        
+            .icons_projects {
+                position: relative;
+                float: left;
+                margin-top: 20px;
+            }
+        
+            .icons_projects img {
+                position: relative;
+                height: 348px;
+                width: 360px;
+                display: inline-block;
+            }
+        
+        .cirricular {
+            position: relative;
+            padding: 30px 5px 30px 5px;
+            display: inline-block;
+        }
+        
+                .cirricular img  {
+                position: relative;
+                width: 360px;
+                height: 360px;
+                border-radius: 180px;
+                -webkit-border-radius: 180px;
+                -moz-border-radius: 180px;
+        }
+        
+        
+            .cirricular a:hover {
+            opacity: 0.5;
+	        filter: alpha(opacity=0.5);
+        }
+        
+            .icons_projects a:hover {
+                opacity: 0.5;
+                filter: alpha(opacity=0.5);
+        }
+        
+        #visualisation_inside {
+                    position: relative;
+                    width: 100%;
+                    padding-top: 80px;
+                    margin: 0 auto 0 auto;
+                    display: inline-block;
+/*            border-bottom: 1px solid #bf984d;*/
+        }
+        
+        #projects_inside {
+            position: relative;
+                    width: 100%;
+                    padding-top: 80px;
+                    margin: 0 auto 0 auto;
+                    display: inline-block;
+            border-bottom: 1px solid #bf984d;
+/*            border: 1px solid pink;*/
+        }
+        
+
+        
+/*        STOPKA */
+        #tootsy {
+            position: relative;
+            margin: 90px auto 5px auto;
+            padding: 10px 0px 10px 0px;
+            width: 100%;
+            height: 370px;
+            font-family: 'Raleway', monospace, sans-serif, serif;
+            background: #2f2e2e;
+/*            border: 1px solid green;*/
+            
+            
+        }
+        
+        #contact {
+            position: relative;
+            width: 1235px;
+            margin: 50px auto;
+            color: white;
+/*            border: 1px solid white;*/
+        }
+        
+            #contact_title {
+                position: relative;
+                margin-left: 200px;
+                font-size: 22px;
+                letter-spacing: 5px;
+                font-weight: bold; 
+                border-bottom: 3px solid #bf984d;
+                width: 805px;
+            }
+        
+            #arounddesign {
+                position: relative;
+                margin-top: 50px;
+                margin-left: 210px;
+                font-size: 22px;
+                letter-spacing: 3px;
+                font-weight: bold;
+            }
+        
+            #adress address {
+                position: relative;
+                margin-left: 205px;
+                margin-top: 20px;
+                text-decoration: none;
+                font-size: 18px;
+                font-style: normal;
+            }
+        
+        
+            #phone {
+                position: relative;
+                margin-top: 20px;
+                margin-left: 210px;/
+                font-size: 18px;
+            }
+
+        
+            #mail {
+                margin-top: 20px;
+                margin-left: 205px;
+                font-size: 18px;
+                color: white;
+            }
+        
+        
+            #mail a {
+                  position: relative;
+                  text-decoration-line: none;
+                  color: white;
+            }
+            
+            #maps  {
+                position: relative;
+                margin-top: -165px;
+                margin-left: 645px;
+            }
+        
+
+/*        DO ZROBIENIA JESZCZE NOTATKI     */
+        
+
+        
+        
+        
+    </style> 
+    
+           
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>                                       
+    <script>
+                    $(document).ready(function() { 
+
+            $('a[href^="#"]').on('click', function(event) {
+
+                var target = $( $(this).attr('href') );
+
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+
+        });
+    </script>       
+</head>
+
+
+
+<body>
+    <div id="site">
+        <div id="heading">
+           <!-- LOGO -->
+            <a href="#site"><img class="logo" src="images/logo.png" alt="Logo Around Design"></a>
+            
+            <!-- MENU -->
+            <div id="menu">
+                <ol id="menu_list">
+                    <li><a id="home_bottom" href="#site">home</a></li>
+                    <li><a id="about_me_bottom" href="#about_me">o mnie</a></li>
+                    <li><a id="offer_bottom" href="#offer">oferta</a></li>
+                    <li><a id="projects_realizated_bottom" href="#projects_realizated">portfolio</a>                  
+                        <ul class="list_portfolio">
+                            <li><a id="projects_bottom" href="#projects_outside">wizualizacje zewnętrzne</a></li>
+                            <li><a id="visualisation_inside_bottom" href="#visualisation_inside">wizualizacje wnętrz</a></li>
+                            <li><a id="projects_inside_bottom" href="#projects_inside">projekty wnętrz</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">kontakt</a></li>
+                </ol>                
+            </div>
+            
+            
+            <!-- KONIEC MENU -->
+        </div>
+           
+            <!-- TREŚĆ STRONY INTERNETOWEJ -->
+            <div id="content">
+
+                  <!-- OBRAZKI -->
+                <div id="head_content">
+                   <figure>
+                   <img src="images/sypialnia_1.jpg" alt="Wizualizacja sypialni od frontu" />
+                   </figure>
+                </div>
+
+                <!-- O MNIE -->
+                <div id="about_me">
+                   <div class="text_heading"><a name="about_me"><h1>O mnie</h1></a></div>
+                   <div id="my_photo">
+                   <img src="images/Martyna_Pietras.jpg" alt="Martyna Pietras, architekt i właściciel Around Design" />
+                   </div>
+
+                    <div id="my_name"><h2>Martyna Pietras</h2></div> 
+    <!--                <br />-->
+
+                   <div class="text_site"><p>Jestem architektem, w 2015 roku ukończyłam Architekturę i&nbsp;Urbanistykę na Politechnice Śląskiej. Cały czas zdobywam doświadczenie i&nbsp;rozwijam swoje umiejętności pracując w&nbsp;polskich i&nbsp;zagranicznych biurach projektowych zarówno pod kątem architektury, projektowania wnętrz jak i&nbsp;designu. Tworzenie wizualizacji jest dla mnie nie tylko pracą, ale również pasją, sztuką obserwacji przestrzeni i&nbsp;odwzorowania jej z dokładnością detalu w&nbsp;wirtualnym świecie.</p> <br />
+                       <p><strong>Dlaczego AROUND DESIGN?</strong></p><br />
+                       <p>Bo tworzę wszystko to, co wokół. Wykonuję wizualizacje architektoniczne, wnętrz, produktu czy przyrody - wszystkiego, co nas otacza.</p></div>
+
+                    <div id="background_motto"><img src="images/city.jpg" alt="Moje motto życiowe - gdyby ludzie robili tylko to, co wyglądało na możliwe, do dzisiaj siedzieliby w jaskiniach - S. Lem." />
+                    <p  class="my-motto"><q>Gdyby ludzie robili tylko to, co wyglądało na możliwe, do dzisiaj siedzieliby w&nbsp;jaskiniach</q> <br />S. Lem</p></div>
+                    <div>
+                        <p class="text_site_continue">... dlatego pokazuję to, co na pierwszy rzut oka wydaje się niemożliwe i&nbsp;często istnieje jedynie w&nbsp;głowach projektantów.  Łącząc technologię z&nbsp;estetyką, zamiłowaniem do projektowania i&nbsp;designu obrazuję "co by było gdyby...". Tworzę więc wizualizacje, które w&nbsp;bardzo realny sposób przedstawią każdy pomysł, stworzą klimat kreowanej przestrzeni, pomogą w&nbsp;podjęciu projektowej decyzji czy doborze materiałów. Fotorealistyczny efekt będzie przydatny podczas prezentacji pomysłu przed klientem, pomoże w&nbsp;zobrazowaniu przyszłej inwestycji czy po prostu przedstawi wnętrze Twojego wymarzonego domu.</p>
+                    </div>
+                </div>
+
+               
+               
+               
+                            <!-- OFERTA -->
+                 
+                <div id="offer">
+                    <div class="text_heading"><a name="offer"><h1>Oferta</h1></a></div>
+                    <div id="offer_category"> 
+                          
+                            <a  href="#" alt="Projektowanie architektoniczne" /><figure id="icon_projects_architecture"><p class="text_offer">Projektowanie architektoniczne</p></figure>
+                           
+                            <a  href="#projects_inside" alt="Projektowanie wnętrz" /><figure id="icon_indoor"><p class="text_offer">Projektowanie wnętrz</p></figure>
+                           
+                            <a  href="#projects_outside" alt="Wizualizacje zewnętrzne" /><figure id="icon_interios"><p class="text_offer">Wizualizacje zewnętrzne</p>
+                            </figure>
+                            
+                            <a  href="#visualisation_inside" alt="Wizualizacje wnętrz" /><figure id="icon_visualization_indoor"><p class="text_offer">Wizualizacje wnętrz</p></figure>
+                
+                            <a  href="#" alt="Wizualizacje przyrody" /><figure id="icon_visualization_nature"><p class="text_offer">Wizualizacje przyrody</p></figure>
+                            
+                            <a  href="#" alt="Wizualizacje produktu" /><figure id="icon_visualization_product"><p class="text_offer">Wizualizacje produktu</p></figure>                
+              </div>        
+        </div>
+
+
+
+    <!--             ZREALIZOWANE PROJEKTY -->
+               
+                   <div id="projects_realizated">
+                   <div class="text_heading"><a name="portfolio"><h1>Portfolio</h1></a></div>
+                      
+                      <div id="projects_inside">
+                        <figure class="icons_projects">
+                               <a name="projects"><img src="images/icon-projects-inside.png" alt="Projekty wnętrz" /></a>
+                           </figure>
+
+                           <figure class="cirricular">
+                                      <a href="#"><img src="images/icon-badroom.jpg" alt="Projekt sypialni" /></a>
+                           </figure>
+                    </div>
+                      <div id="projects_outside">
+                       <figure class="icons_projects">
+                           <a name="projects"><img src="images/icon-example-outside.png" alt="Wizualizacje zewnętrzne" /></a>
+                       </figure>
+                       
+                       <figure class="cirricular">
+                                  <a href="#"><img src="images/icon-dom-szeregowy.jpg" alt="Wizualizacja domu szeregowego" /></a>
+                       </figure>
+                       <figure class="cirricular">
+                                  <a href="#"><img src="images/icon-dom-szeregowka2.jpg" alt="Wizualizacja domu szeregowego" /></a>
+                       </figure>
+                       <figure class="cirricular">
+                                  <a href="#"><img src="images/icon-dom-jednorodzinny.jpg" alt="Wizualizacja domu jednorodzinnego" /></a>
+                       </figure>
+                       <figure class="cirricular">
+                                  <a href="#"><img src="images/icon-dom-jednorodzinny-corten.jpg" alt="Wizualizacja domu jednorodzinnego" /></a>
+                       </figure>
+                       <figure class="cirricular">
+                                  <a href="#"><img src="images/icon-museum.jpg" alt="Wizualizacja muzeum" /></a>
+                       </figure>         
+                       <figure class="cirricular">
+                                  <a href="#"><img src="images/icon-osiedle-wraz-z-czescia-uslugowa.jpg" alt="Wizualizacja osiedla wraz z częścią usługową" /></a>
+                       </figure>  
+                    </div>
+                       
+                        
+                        <!-- WIZUALIZACJE WNĘTRZ -->
+                        
+                       <div id="visualisation_inside">
+                       
+                           <figure class="icons_projects">
+                               <a name="projects"><img src="images/icon-example-inside.png" alt="Wizualizacje wnętrz" /></a>
+                           </figure>
+
+                           <figure class="cirricular">
+                                      <a href="#"><img src="images/icon-badroom.jpg" alt="Wizualizacja sypialni" /></a>
+                           </figure>
+                           <figure class="cirricular">
+                                      <a href="#"><img src="images/icon-room.jpg" alt="Wizualizacja pokoju wraz z kuchnią" /></a>
+                           </figure>
+
+                        </div>
+                        
+                        
+                        
+                        
+                    
+                    
+                </div>
+            
+
+        <div id="tootsy">
+            <div id="contact">
+                <div id="contact_title"><h1>Kontakt</h1></div>
+                <h3 id="arounddesign">Around Design</h3>
+                  <div id="adress"><address>ul. Zielona 13 <br />
+                      43-215 Jankowice k./Pszczyny</address>               
+                  </div>
+                  <div id="phone">tel. +48 664 807 316</div>
+                  <div id="mail"><a href="mailto:around.design@outlook.com">e-mail: around.design@outlook.com</a></div>
+                    <div id="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.672357605494!2d18.96843911512799!3d49.99875192769019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716bbcb169e8e9f%3A0xaebfb332a8afd8cf!2sAround+Design!5e0!3m2!1spl!2spl!4v1541272569436" width="350" height="165" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </div>
+          
+        </div>
+    </div>
+    </div>
+    
+    
+
+
+
+
+</body>
+   
+</html>
