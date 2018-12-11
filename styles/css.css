@@ -1,0 +1,857 @@
+     * {
+         margin: 0px auto 0px auto;
+         max-width: 100vw;
+         font-family: 'Raleway', monospace, sans-serif, serif;
+     }
+
+
+     #site {
+         margin: 0px auto 0px auto;
+         min-width: 800px;
+     }
+
+     /* NAGŁÓWEK */
+
+     #heading {
+         position: fixed;
+         margin: 0px auto 0px auto;
+         width: 100vw;
+         height: auto;
+         z-index: 10;
+         background-color: white;
+         opacity: 0.8;
+         border-bottom: 1px solid #bf984d;
+         min-width: 800px;
+     }
+
+     img.logo {
+         position: relative;
+         width: 18%;
+         min-width: 200px;
+         max-width: 280px;
+         height: auto;
+         padding: 5px;
+         margin-left: 20px;
+     }
+
+     /* KONIEC NAGŁÓWKA */
+
+     /* MENU */
+
+     #menu {
+         position: relative;
+         margin-right: 12%;
+         margin-top: 20px;
+         display: inline-block;
+         width: 840px;
+         height: 25px;
+         float: right;
+         padding: 0px 0px 5px 0px;
+         list-style-type: none;
+         font-size: 18px;
+         letter-spacing: 1px;
+         text-align: center;
+         text-transform: uppercase;
+         font-weight: bold;
+     }
+
+
+     #menu_list > li {
+         float: left;
+         width: 150px;
+         display: inline-block;
+         padding: 5px;
+         transition: background 0.5s;
+     }
+
+     #menu_list a:link,
+     a:visited {
+         text-decoration: none;
+         color: black;
+         display: inline-block;
+     }
+
+     #menu_list li a {
+         display: inline-block;
+         text-decoration: none;
+         padding: 0 5px;
+     }
+
+     #menu_list > li:hover > a {
+         display: inline-block;
+         color: white;
+     }
+
+     #menu_list > li:hover {
+         background-color: #bf984d;
+         height: 21px;
+         width: 150px;
+     }
+
+
+     #menu_list > li > ul {
+         list-style-type: none;
+         padding: 0;
+         margin: 4px 0px 0px 0px;
+         display: none;
+     }
+
+
+     #menu_list > li > ul > li {
+         background-color: white;
+         margin-left: -5px;
+         margin-top: 3px;
+         padding: 10px 10px 10px 0px;
+         opacity: 0.9;
+         width: 150px;
+         transition: background 0.5s;
+     }
+
+     #menu_list > li > ul > li:hover {
+         background-color: #bf984d;
+         width: 150px;
+     }
+
+     #menu_list > li > ul > li:hover a {
+         color: white;
+         text-align: center;
+     }
+
+     #menu_list > li:hover > ul {
+         display: inline-block;
+     }
+
+
+     #menu_list a:link,
+     a:visited {
+         text-decoration: none;
+         color: black;
+         display: inline-block;
+     }
+
+     /* KONIEC MENU ROZWIJALNEGO */
+
+     /* ZAWARTOŚĆ STRONY INTERNETOWEJ */
+
+     #content {
+         position: relative;
+         margin: 0 auto;
+         min-width: 800px;
+     }
+
+     #head_content img {
+         position: relative;
+         margin: 0px auto;
+         max-width: 100vw;
+         max-height: 100vh;
+         z-index: -1;
+     }
+
+     .mySlides {
+         display: none;
+     }
+
+     .images_slides {
+         position: relative;
+         margin: 0 auto;
+     }
+
+     .button-image-left {
+         border: none;
+         display: inline-block;
+         padding: 30px 35px;
+         vertical-align: middle;
+         overflow: hidden;
+         text-decoration: none;
+         color: inherit;
+         background-color: inherit;
+         text-align: center;
+         cursor: pointer;
+         white-space: nowrap;
+         color: #fff !important;
+         background-color: lightslategray;
+         position: absolute;
+         top: 50%;
+         opacity: 0.5;
+         left: 1%;
+         transform: translate(0%, -50%);
+         -ms-transform: translate(-0%, -50%);
+         z-index: 10;
+         border: 2px solid white;
+         border-radius: 100px;
+         outline-style: none;
+         transition: all 0.5s;
+     }
+
+     .button-image-left:hover {
+         background-color: #bf984d;
+     }
+
+
+     .button-image-right {
+         border: none;
+         display: inline-block;
+         padding: 30px 35px;
+         vertical-align: middle;
+         overflow: hidden;
+         text-decoration: none;
+         color: inherit;
+         background-color: inherit;
+         text-align: center;
+         cursor: pointer;
+         white-space: nowrap;
+         color: #fff !important;
+         background-color: lightslategray;
+         position: absolute;
+         top: 50%;
+         opacity: 0.5;
+         right: 1%;
+         transform: translate(0%, -40%);
+         -ms-transform: translate(-0%, -50%);
+         z-index: 10;
+         border: 2px solid white;
+         border-radius: 60px;
+         outline-style: none;
+         transition: all 0.5s;
+     }
+
+     .button-image-right:hover {
+         background-color: #bf984d;
+     }
+
+
+     #about_me {
+         position: relative;
+         width: 1235px;
+         min-width: 400px;
+         padding-top: 90px;
+         margin: 0px auto 0px auto;
+     }
+
+     .text_heading {
+         position: relative;
+         margin-top: 0px;
+         font-size: 22px;
+         float: left;
+         letter-spacing: 5px;
+         font-weight: bold;
+         border-bottom: 3px solid #bf984d;
+         width: 100%;
+         z-index: 5;
+     }
+
+     #my_photo img {
+         position: relative;
+         margin-top: 50px;
+         width: 22vw;
+         max-width: 330px;
+         padding-right: 10px;
+         float: left;
+     }
+
+     #my_name {
+         position: relative;
+         margin-top: 100px;
+         margin-left: 27%;
+         font-size: 18px;
+         letter-spacing: 2px;
+         font-weight: bold;
+     }
+
+     .text_site {
+         position: relative;
+         margin-top: 20px;
+         margin-left: 27%;
+         text-align: justify;
+         font-size: 20px;
+         line-height: 150%;
+
+     }
+
+     /* MOJE MOTTO */
+
+     #background_motto img {
+         position: relative;
+         padding-top: 50px;
+         width: 100%;
+         height: 150px;
+         opacity: 0.6;
+     }
+
+     .my-motto {
+         position: relative;
+         top: -125px;
+         margin-left: 35px;
+         color: black;
+         font-size: 28px;
+         font-weight: bold;
+         text-align: justify;
+         max-width: 1150px;
+         letter-spacing: 3px;
+     }
+
+     .text_site_continue {
+         position: relative;
+         margin-top: -50px;
+         text-align: justify;
+         font-size: 20px;
+         line-height: 150%;
+     }
+
+
+     /* OFERTA */
+
+     #offer {
+         position: relative;
+         width: 1235px;
+         height: 100%;
+         padding-top: 90px;
+         padding-bottom: 40px;
+         margin: 0px auto 0px auto;
+     }
+
+     /* UKŁAD IKON W OFERCIE */
+
+     #offer_category {
+         position: relative;
+         margin: 0px auto 0px auto;
+         display: inline-block;
+         transition: all 2s 0;
+     }
+
+
+     /* text pod ikonami */
+     .text_offer {
+         position: relative;
+         text-align: center;
+         text-transform: uppercase;
+         top: 215px;
+         font-size: 20px;
+         font-weight: bold;
+         letter-spacing: 3px;
+         color: black;
+     }
+
+     /* IKONA WIZUALIZACJI ZEWNĘTRZNYCH */
+     #icon_projects_architecture {
+         background-image: url(../images/icon-projects-architecture.png);
+         width: 350px;
+         height: 343px;
+         margin: -20px 20px 100px 20px;
+         background-repeat: no-repeat;
+         float: left;
+         border: none;
+         background-color: white;
+         outline-style: none;
+         transition: all 2s;
+     }
+
+     #icon_projects_architecture:hover {
+         position: relative;
+         width: 350px;
+         height: 343px;
+         background-image: url(../images/icon-projects-architecture-hover.png);
+         background-repeat: no-repeat;
+         cursor: pointer;
+         border: none;
+         transition: all 2s;
+     }
+
+     #projects_architecture_description {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         display: none;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: rgba(0, 0, 0, 1.0);
+     }
+
+     #icon_projects_architecture:focus + #projects_architecture_description {
+         display: block;
+         animation-name: akcja;
+         animation-duration: 2s;
+
+     }
+
+     @keyframes akcja {
+         0% {
+             background-color: rgba(255, 255, 255, 0.0);
+             color: rgba(0, 0, 0, 0.0);
+         }
+
+         100% {
+             background-color: rgba(255, 255, 255, 0.8);
+             color: rgba(0, 0, 0, 1.0);
+         }
+     }
+
+
+     #icon_indoor {
+         background-image: url(../images/icon-indoor.png);
+         width: 350px;
+         height: 343px;
+         margin: -20px 20px 100px 20px;
+         background-repeat: no-repeat;
+         float: left;
+         border: none;
+         background-color: white;
+         outline-style: none;
+         transition: all 2s;
+     }
+
+     #icon_indoor:hover {
+         position: relative;
+         width: 350px;
+         height: 343px;
+         background-image: url(../images/icon-indoor-hover.png);
+         background-repeat: no-repeat;
+         cursor: pointer;
+         border: none;
+     }
+
+     #indoor_description {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         display: none;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: rgba(0, 0, 0, 1.0);
+     }
+
+     #icon_indoor:focus + #indoor_description {
+         display: block;
+         animation-name: akcja;
+         animation-duration: 2s;
+     }
+
+
+
+     #icon_interios {
+         background-image: url(../images/icon-interios.png);
+         width: 350px;
+         height: 343px;
+         margin: -20px 20px 100px 20px;
+         background-repeat: no-repeat;
+         float: left;
+         border: none;
+         background-color: white;
+         outline-style: none;
+         transition: all 2s;
+     }
+
+     #icon_interios:hover {
+         position: relative;
+         width: 350px;
+         height: 343px;
+         background-image: url(../images/icon-interios-hover.png);
+         background-repeat: no-repeat;
+         cursor: pointer;
+         border: none;
+     }
+
+     #interios_description {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         display: none;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: rgba(0, 0, 0, 1.0);
+     }
+
+     #icon_interios:focus + #interios_description {
+         display: block;
+         animation-name: akcja;
+         animation-duration: 2s;
+     }
+
+
+     #icon_visualization_indoor {
+         background-image: url(../images/icon-visualization-indoor.png);
+         width: 350px;
+         height: 343px;
+         margin: 20px 20px 40px 20px;
+         background-repeat: no-repeat;
+         float: left;
+         border: none;
+         background-color: white;
+         outline-style: none;
+         transition: all 2s;
+     }
+
+     #icon_visualization_indoor:hover {
+         position: relative;
+         width: 350px;
+         height: 343px;
+         background-image: url(../images/icon-visualization-indoor-hover.png);
+         background-repeat: no-repeat;
+         cursor: pointer;
+         border: none;
+     }
+
+
+     #visualization_indoor_description {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         display: none;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: rgba(0, 0, 0, 1.0);
+     }
+
+     #icon_visualization_indoor:focus + #visualization_indoor_description {
+         display: block;
+         animation-name: akcja;
+         animation-duration: 2s;
+     }
+
+
+     #icon_visualization_nature {
+         background-image: url(../images/icon-nature.png);
+         width: 350px;
+         height: 343px;
+         margin: 20px 20px 40px 20px;
+         background-repeat: no-repeat;
+         float: left;
+         border: none;
+         background-color: white;
+         outline-style: none;
+         transition: all 2s;
+     }
+
+     #icon_visualization_nature:hover {
+         position: relative;
+         width: 350px;
+         height: 343px;
+         background-image: url(../images/icon-nature-hover.png);
+         background-repeat: no-repeat;
+         cursor: pointer;
+         border: none;
+     }
+
+
+     #visualization_nature_description {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         display: none;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: rgba(0, 0, 0, 1.0);
+     }
+
+     #icon_visualization_nature:focus + #visualization_nature_description {
+         display: block;
+         animation-name: akcja;
+         animation-duration: 2s;
+     }
+
+
+     #icon_visualization_product {
+         background-image: url(../images/icon-product.png);
+         width: 350px;
+         height: 343px;
+         margin: 20px 20px 40px 20px;
+         background-repeat: no-repeat;
+         float: left;
+         border: none;
+         background-color: white;
+         outline-style: none;
+         transition: all 2s;
+     }
+
+     #icon_visualization_product:hover {
+         position: relative;
+         width: 350px;
+         height: 343px;
+         background-image: url(../images/icon-product-hover.png);
+         background-repeat: no-repeat;
+         cursor: pointer;
+         border: none;
+     }
+
+     #visualization_product_description {
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 100;
+         display: none;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: rgba(0, 0, 0, 1.0);
+     }
+
+     #icon_visualization_product:focus + #visualization_product_description {
+         display: block;
+         animation-name: akcja;
+         animation-duration: 2s;
+     }
+
+     .offer_descriptions {
+         text-align: justify;
+         margin-top: -80vh;
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 600px;
+         padding: 100px 50px;
+         font-size: 18px;
+         line-height: 150%;
+     }
+
+
+     .offer_border {
+         background-image: url(../images/icon-logo.png);
+         height: 90vh;
+         opacity: 0.2;
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+     }
+
+     /*REALIZACJE PRZYKŁADY*/
+
+     #projects_realizated {
+         position: relative;
+         width: 1235px;
+         min-width: 610px;
+         height: 100%;
+         padding-top: 90px;
+         margin: 0px auto 0px auto;
+     }
+
+     #projects_outside {
+         position: relative;
+         width: 100%;
+         padding-top: 90px;
+         margin: 0px auto 0 auto;
+         border-bottom: 1px solid #bf984d;
+     }
+
+     .icons_projects {
+         position: relative;
+         float: left;
+         margin-top: 20px;
+
+     }
+
+     .icons_projects img {
+         position: relative;
+         height: 348px;
+         width: 360px;
+         display: inline-block;
+     }
+
+     .icons_projects a {
+         transition: all 1s;
+     }
+
+     .cirricular {
+         position: relative;
+         padding: 30px 5px 30px 5px;
+         display: inline-block;
+     }
+
+     .cirricular a {
+         transition: 1s;
+     }
+
+     .cirricular img {
+         position: relative;
+         width: 360px;
+         height: 360px;
+         border-radius: 180px;
+         -webkit-border-radius: 180px;
+         -moz-border-radius: 180px;
+     }
+
+
+     .cirricular a:hover {
+         opacity: 0.5;
+         filter: alpha(opacity=0.5);
+     }
+
+     .icons_projects a:hover {
+         opacity: 0.5;
+         filter: alpha(opacity=0.5);
+     }
+
+     #visualisation_inside {
+         position: relative;
+         width: 100%;
+         padding-top: 80px;
+         margin: 0 auto 0 auto;
+         display: inline-block;
+     }
+
+     #projects_inside {
+         position: relative;
+         width: 100%;
+         padding-top: 80px;
+         margin: 0 auto 0 auto;
+         display: inline-block;
+         border-bottom: 1px solid #bf984d;
+     }
+
+
+     /*        STOPKA */
+
+     #tootsy {
+         position: relative;
+         margin: 120px auto 0px auto;
+         padding: 65px 0px 20px 0px;
+         color: white;
+         background-image: url(../images/tootsy-background.png);
+         background-repeat: repeat;
+     }
+
+
+     #contact_box {
+         position: relative;
+         width: 970px;
+         margin: 0px auto 0px auto;
+     }
+
+     #contact_title {
+         position: relative;
+         font-size: 22px;
+         letter-spacing: 5px;
+         font-weight: bold;
+         border-bottom: 3px solid #bf984d;
+         max-width: 1235px;
+         z-index: 5;
+     }
+
+     iframe {
+         position: relative;
+         display: inline-block;
+         float: left;
+         margin-top: 30px;
+     }
+
+     #contact {
+         position: relative;
+         display: inline-block;
+         width: 350px;
+         margin: 30px 0px 10px 0px;
+     }
+
+
+     #arounddesign {
+         margin-left: 25px;
+         font-size: 22px;
+         letter-spacing: 3px;
+         font-weight: bold;
+     }
+
+     address {
+         margin-left: 25px;
+         margin-top: 20px;
+         text-decoration: none;
+         font-size: 18px;
+         font-style: normal;
+     }
+
+
+     #phone {
+         margin-top: 20px;
+         margin-left: 25px;
+         font-size: 18px;
+     }
+
+
+     #mail {
+         margin-top: 20px;
+         margin-left: 25px;
+         font-size: 18px;
+         color: white;
+     }
+
+
+     #mail a {
+         color: white;
+     }
+
+
+     #contact_form {
+         position: relative;
+         width: 670px;
+         margin: 0px 0px 0px 0px;
+         padding: 40px 0px 0px 25px;
+         font-size: 18px;
+     }
+
+     input.name_and_mail {
+         color: black;
+         background-color: darkgray;
+         font-size: 100%;
+         border: 1px solid #bdbdbd;
+         border-radius: 5px;
+         width: 300px;
+         padding: 5px 5px 5px 5px;
+         background-repeat: no-repeat;
+         margin-bottom: 10px;
+     }
+
+     input:focus {
+         background-color: #ffffff;
+         border: 1px solid #bf984d;
+     }
+
+
+     textarea {
+         width: 480px;
+         color: black;
+         background-color: darkgray;
+         font-size: 80%;
+         border: 1px solid #bdbdbd;
+         border-radius: 5px;
+         padding: 5px 5px 5px 5px;
+         max-width: 480px;
+         min-width: 480px;
+         height: 100px;
+         min-height: 100px;
+         max-height: 300px;
+     }
+
+     textarea:focus {
+         background-color: #ffffff;
+         border: 1px solid #bf984d;
+     }
+
+
+     input.send_question {
+         color: black;
+         text-align: center;
+         /*         text-transform: uppercase;*/
+         font-weight: bold;
+         padding: 10px;
+         margin-top: 20px;
+         float: right;
+         background-color: blanchedalmond;
+         border: 1px solid blanchedalmond;
+         border-radius: 5px;
+         letter-spacing: 1px;
+         transition: 0.5s;
+     }
+
+     input.send_question:hover {
+         cursor: pointer;
+         background-color: #bf984d;
+         border: 1px solid #bf984d;
+         color: white;
+         /*         font-weight: bold;*/
+     }
