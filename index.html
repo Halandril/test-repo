@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html lang="pl-PL">
 
 <head>
@@ -9,36 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- OPIS STRONY, O CZYM ONA JEST -->
     <meta name="description" content="Biuro Projektowe Around Design. Martyna Pietras - architekt, Bielsko-Biała, architekt wnętrz, architekt krajobrazu">
-
     <!-- HASŁA ZWIĄZANE ZE STRONĄ, DZIAŁALNOŚCIĄ POD WYSZUKIWANIE -->
     <meta name="keywords" content="architekt, architektura architekt wnętrz, biuro, biuro projektowe, studio projektowe, pracownia, wizualizacje, rzudy 3D, wizualizacje wnętrz, wizualizacje zewnętrzne, wizualizacje przyrody, wizualizacje produktu, wnętrza, budynki,  projektowanie, projektowanie wnętrz, projekty, projektanci, domy mieszkalne, budynki, Pietras, Martyna, Martyna Pietras, Bielsko-Biała, architekt w Bielsku">
-
     <link rel="shortcut icon" href="images/icon-arounddesign.ico" type="image/x-icon" />
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-
     <!-- KTO JEST AUTOREM TEJ STRONKI -->
     <meta name="author" content="Piotr Raszka">
-
     <!--    CZCIONKA      -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext" rel="stylesheet">
-
     <!--   <style>@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');</style>-->
-
-
     <!-- SITE TITLE -->
     <title>Around Design Biuro Projektowe</title>
-
     <!-- CSS -->
     <link rel="stylesheet" href="styles/css.css" type="text/css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-
-            $('a[href^="#"]').on('click', function(event) {
-
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
                 var target = $($(this).attr('href'));
-
                 if (target.length) {
                     event.preventDefault();
                     $('html, body').animate({
@@ -51,6 +37,17 @@
 </head>
 
 <body>
+   
+   
+   <div id="loader-wrapper">
+    <div id="loading_logo">
+<!--      <hr/><hr/><hr/><hr/>-->
+    </div>
+    <div id="loading"></div>
+</div>
+   
+   
+   
     <div id="site">
         <div id="heading">
             <!-- LOGO -->
@@ -72,17 +69,11 @@
                 </ol>
             </div>
         </div>
-
         <!-- TREŚĆ STRONY INTERNETOWEJ -->
         <div id="content">
             <!-- OBRAZKI -->
             <div id="head_content">
-                <div class="images_slides">
-                    <img class="mySlides" src="images/sypialnia_1.jpg" alt="Wizualizacja sypialni od frontu" />
-                    <img class="mySlides" src="images/salon_kuchnia_1.jpg" alt="Wizualizacja salonu wraz z kuchnią" />
-                    <img class="mySlides" src="images/salon_1.jpg" alt="Wizualizacja salonu" />
-                    <img class="mySlides" src="images/wizualizacja_ogrodu_jesieni%C4%85.jpg" alt="Wizualizacja ogrodu jesienią" />
-                    <img class="mySlides" src="images/wizualizacja_osiedla_z_lotu_ptaka.jpg" alt="Wizualizacja salonu z lotu ptaka" />
+                <div class="images_slides"> <img class="mySlides" src="images/sypialnia_1.jpg" alt="Wizualizacja sypialni od frontu" /> <img class="mySlides" src="images/salon_kuchnia_1.jpg" alt="Wizualizacja salonu wraz z kuchnią" /> <img class="mySlides" src="images/salon_1.jpg" alt="Wizualizacja salonu" /> <img class="mySlides" src="images/wizualizacja_ogrodu_jesieni%C4%85.jpg" alt="Wizualizacja ogrodu jesienią" /> <img class="mySlides" src="images/wizualizacja_osiedla_z_lotu_ptaka.jpg" alt="Wizualizacja salonu z lotu ptaka" />
                     <button class="button-image-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="button-image-right" onclick="plusDivs(+1)">&#10095;</button>
                 </div>
@@ -126,40 +117,35 @@
                     }
                 </script>
             </div>
-
             <!-- O MNIE -->
             <div id="about_me">
                 <div class="text_heading">
                     <a name="about_me">
-                        <h1>O mnie</h1>
-                    </a>
+                        <h1>O mnie</h1> </a>
                 </div>
-                <div id="my_photo">
-                    <img src="images/Martyna_Pietras.jpg" alt="Martyna Pietras, architekt i właściciel Around Design" />
-                </div>
-
+                <div id="my_photo"> <img src="images/Martyna_Pietras.jpg" alt="Martyna Pietras, architekt i właściciel Around Design" /> </div>
                 <div id="my_name">
-                    <h2>Martyna Pietras</h2>
-                </div>
+                    <h2>Martyna Pietras</h2> </div>
                 <div class="text_site">
-                    <p>Jestem architektem, w 2015 roku ukończyłam Architekturę i&nbsp;Urbanistykę na Politechnice Śląskiej. Cały czas zdobywam doświadczenie i&nbsp;rozwijam swoje umiejętności pracując w&nbsp;polskich i&nbsp;zagranicznych biurach projektowych zarówno pod kątem architektury, projektowania wnętrz jak i&nbsp;designu. Tworzenie wizualizacji jest dla mnie nie tylko pracą, ale również pasją, sztuką obserwacji przestrzeni i&nbsp;odwzorowania jej z dokładnością detalu w&nbsp;wirtualnym świecie.</p> <br />
-                    <p><strong>Dlaczego AROUND DESIGN?</strong></p><br />
+                    <p>Jestem architektem, w 2015 roku ukończyłam Architekturę i&nbsp;Urbanistykę na Politechnice Śląskiej. Cały czas zdobywam doświadczenie i&nbsp;rozwijam swoje umiejętności pracując w&nbsp;polskich i&nbsp;zagranicznych biurach projektowych zarówno pod kątem architektury, projektowania wnętrz jak i&nbsp;designu. Tworzenie wizualizacji jest dla mnie nie tylko pracą, ale również pasją, sztuką obserwacji przestrzeni i&nbsp;odwzorowania jej z dokładnością detalu w&nbsp;wirtualnym świecie.</p>
+                    <br />
+                    <p><strong>Dlaczego AROUND DESIGN?</strong></p>
+                    <br />
                     <p>Bo tworzę wszystko to, co wokół. Wykonuję wizualizacje architektoniczne, wnętrz, produktu czy przyrody - wszystkiego, co nas otacza.</p>
                 </div>
                 <div id="background_motto"><img src="images/city.jpg" alt="Moje motto życiowe - gdyby ludzie robili tylko to, co wyglądało na możliwe, do dzisiaj siedzieliby w jaskiniach - S. Lem." />
-                    <p class="my-motto"><q>Gdyby ludzie robili tylko to, co wyglądało na możliwe, do dzisiaj siedzieliby w&nbsp;jaskiniach</q> <br />S. Lem</p>
+                    <p class="my-motto"><q>Gdyby ludzie robili tylko to, co wyglądało na możliwe, do dzisiaj siedzieliby w&nbsp;jaskiniach</q>
+                        <br />S. Lem</p>
                 </div>
                 <div>
                     <p class="text_site_continue">... dlatego pokazuję to, co na pierwszy rzut oka wydaje się niemożliwe i&nbsp;często istnieje jedynie w&nbsp;głowach projektantów. Łącząc technologię z&nbsp;estetyką, zamiłowaniem do projektowania i&nbsp;designu obrazuję "co by było gdyby...". Tworzę więc wizualizacje, które w&nbsp;bardzo realny sposób przedstawią każdy pomysł, stworzą klimat kreowanej przestrzeni, pomogą w&nbsp;podjęciu projektowej decyzji czy doborze materiałów. Fotorealistyczny efekt będzie przydatny podczas prezentacji pomysłu przed klientem, pomoże w&nbsp;zobrazowaniu przyszłej inwestycji czy po prostu przedstawi wnętrze Twojego wymarzonego domu.</p>
                 </div>
             </div>
-
             <!-- OFERTA -->
             <div id="offer">
                 <div class="text_heading">
                     <a name="offer">
-                        <h1>Oferta</h1>
-                    </a>
+                        <h1>Oferta</h1> </a>
                 </div>
                 <div id="offer_category">
                     <button id="icon_projects_architecture">
@@ -197,7 +183,6 @@
                         <div class="offer_descriptions">
                             <p>Opis tworzenia wizualizacji wnętrz. To tutaj chciałabym szczegółowo opisać to, czym się zajmuję. Zamieszczę procedurę krok po kroku, sposób wyceny i wiele innych ważnych informacji. Objaśnię również jakie są etapy wykonywania takiej wizualizacji lub projektu.</p>
                         </div>
-
                     </div>
                     <button id="icon_visualization_nature">
                         <p class="text_offer">Wizualizacje przyrody</p>
@@ -219,30 +204,26 @@
                     </div>
                 </div>
             </div>
-
             <!--             ZREALIZOWANE PROJEKTY -->
             <div id="projects_realizated">
                 <div class="text_heading">
                     <a name="portfolio">
-                        <h1>Portfolio</h1>
-                    </a>
+                        <h1>Portfolio</h1> </a>
                 </div>
                 <div id="projects_inside">
                     <figure class="icons_projects">
                         <a name="projects"><img src="images/icon-projects-inside.png" alt="Projekty wnętrz" /></a>
                     </figure>
-
                     <figure class="cirricular">
-                        <a href="#"><img src="images/icon-badroom.jpg" alt="Projekt sypialni" /></a>
+                        <a href="projekt_sypialni/wizualizacja_sypialni.html"><img src="images/icon-badroom.jpg" alt="Projekt sypialni" /></a>
                     </figure>
                 </div>
                 <div id="projects_outside">
                     <figure class="icons_projects">
                         <a name="projects"><img src="images/icon-example-outside.png" alt="Wizualizacje zewnętrzne" /></a>
                     </figure>
-
                     <figure class="cirricular">
-                        <a href="#"><img src="images/icon-dom-szeregowy.jpg" alt="Wizualizacja domu szeregowego" /></a>
+                        <a href="osiedle_Tychy/osiedle_tychy.html"><img src="images/icon-dom-szeregowy.jpg" alt="Wizualizacja domu szeregowego" /></a>
                     </figure>
                     <figure class="cirricular">
                         <a href="#"><img src="images/icon-dom-szeregowka2.jpg" alt="Wizualizacja domu szeregowego" /></a>
@@ -260,7 +241,6 @@
                         <a href="#"><img src="images/icon-osiedle-wraz-z-czescia-uslugowa.jpg" alt="Wizualizacja osiedla wraz z częścią usługową" /></a>
                     </figure>
                 </div>
-
                 <!-- WIZUALIZACJE WNĘTRZ -->
                 <div id="visualisation_inside">
                     <figure class="icons_projects">
@@ -277,42 +257,134 @@
         </div>
         <div id="tootsy">
             <div id="contact_title">
-                <h1>Kontakt</h1>
-            </div>
+                <h1>Kontakt</h1> </div>
             <div id="contact_box">
-                <div id="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.672357605494!2d18.96843911512799!3d49.99875192769019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716bbcb169e8e9f%3A0xaebfb332a8afd8cf!2sAround+Design!5e0!3m2!1spl!2spl!4v1541272569436" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <!--                <div id="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.672357605494!2d18.96843911512799!3d49.99875192769019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716bbcb169e8e9f%3A0xaebfb332a8afd8cf!2sAround+Design!5e0!3m2!1spl!2spl!4v1541272569436" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe></div>-->
                 <div id="contact">
                     <h3 id="arounddesign">Around Design</h3>
                     <div id="adress"><address>ul. Zielona 13 <br />
                             43-215 Jankowice k./Pszczyny</address></div>
                     <div id="phone">tel. +48 664 807 316</div>
                     <div id="mail"><a href="mailto:around.design@outlook.com">e-mail: around.design@outlook.com</a></div>
+                    <a href="https://web.facebook.com/arounddesign.m.pietras/" target="_blank">
+                        <figure id="icon_facebook"></figure>
+                    </a>
+                    <a href="https://www.instagram.com/around.design/" target="_blank">
+                        <figure id="icon_instagram"></figure>
+                    </a>
+                    <a href="https://goo.gl/maps/6qT1ELsRz5p" target="_blank">
+                        <figure id="icon_google_maps"></figure>
+                    </a>
                 </div>
                 <div>
-                    <table id="contact_form">
-                        <form action="" method="post">
-                            <tr>
-                                <td>Imię i Nazwisko:</td>
-                                <td><input class="name_and_mail" type="text" name="formName" /></td>
-                            </tr>
-                            <tr>
-                                <td>E-mail:</td>
-                                <td><input class="name_and_mail" type="text" name="formEmail" /></td>
-                            </tr>
-                            <tr>
-                                <td>Treść wiadomości:</td>
-                                <td><textarea name="formText"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td><input class="send_question" type="submit" name="submit" value="Wyślij formularz" /></td>
-                            </tr>
-                        </form>
-                    </table>
+                    <?php
+//--- początek formularza ---
+if(empty($_POST['submit'])) {
+?>
+                        <table id="contact_form">
+                            <form action="" method="post">
+                                <tr>
+                                    <td>Imię i Nazwisko:</td>
+                                    <td>
+                                        <input class="name_and_mail" type="text" name="formName" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail:</td>
+                                    <td>
+                                        <input class="name_and_mail" type="text" name="formEmail" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Treść wiadomości:</td>
+                                    <td>
+                                        <textarea name="formText"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <input class="send_question" type="submit" name="submit" value="Wyślij formularz" />
+                                    </td>
+                                </tr>
+                            </form>
+                        </table>
+                        <!--
+<?php
+} else {
+
+//twoje dane
+$email = 'raszkapiotr@gmail.com';
+
+//dane z formularza
+$formName = $_POST['formName'];
+$formEmail = $_POST['formEmail'];
+$formText = $_POST['formText'];
+
+if(!empty($formName) && !empty($formEmail) && !empty($formText)) {
+
+//--- początek funkcji weryfikującej adres e-mail ---
+function checkMail($checkmail) {
+  if(filter_var($checkmail, FILTER_VALIDATE_EMAIL)) {
+    if(checkdnsrr(array_pop(explode("@",$checkmail)),"MX")){
+        return true;
+      }else{
+        return false;
+      }
+  } else {
+    return false;
+  }
+}
+//--- koniec funkcji ---
+if(checkMail($formEmail)) {
+  //dodatkowe informacje: ip i host użytkownika
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+ 
+  //tworzymy szkielet wiadomości
+  //treść wiadomości
+   $mailText = "Treść wiadomości:\n$formText\nOd: $formName, $formEmail ($ip, $host)";
+    //$mailText = "Treść wiadomości: $formText Od: $formName, $formEmail ($ip, $host)";
+ 
+  //adres zwrotny
+    $mailHeader = "From: $formName <$formEmail>";
+    //$mailHeader .= "Content-type: text/plain; charset=utf-8rn";[/code]
+  // $mailHeader = "Content-type: text/plain; charset=utf-8";
+ 
+  //funkcja odpowiedzialna za wysłanie e-maila
+  @mail($email, 'Formularz kontaktowy', $mailText, $mailHeader) or die('Błąd: wiadomość nie została wysłana');
+ 
+  //komunikat o poprawnym wysłaniu wiadomości
+  echo 'Wiadomość została wysłana';
+} else {
+  echo 'Adres e-mail jest niepoprawny';
+}
+
+} else {
+  //komunikat w przypadku nie powodzenia
+  echo 'Wypełnij wszystkie pola formularza';
+}
+
+//--- koniec formularza ---
+}
+?>
+-->
                 </div>
             </div>
         </div>
     </div>
+    
+    
+    <script>
+$('html').addClass('js');
+$(window).load(function() {
+    setTimeout(
+        function() {
+            $("#loader-wrapper").fadeOut();
+        }, 500);
+});
+
+</script>
 </body>
 
 </html>
