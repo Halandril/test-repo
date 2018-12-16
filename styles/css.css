@@ -8,7 +8,155 @@
      #site {
          margin: 0px auto 0px auto;
          min-width: 800px;
+/*
+                  background-image: url(../81011c5a.png);
+         background-repeat: repeat;
+         z-index: -1000000;
+*/
      }
+
+
+                /*PRELOADER*/
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    margin: 0px auto 0px auto;
+  z-index: 1000;
+  background: #ECF0F1;
+/*    background-image: url(../81011c5a.png);*/
+    background-repeat: repeat;
+   display: none; 
+}
+
+#loading_logo {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    background-image: url(../images/logo.png);
+    height: 110px;
+    width: 500px;
+    background-repeat: no-repeat;
+    animation: loading_logo 0.6s;
+}
+
+#loading {
+    position: absolute;
+    background: #bf984d;
+    top: 60%;
+    left: 30%;
+    height: 5px;
+    width: 5px;
+    animation: loading 0.6s;
+}
+
+@keyframes loading {
+    0%, 100% {
+        width: 5px;
+    }
+    
+    100% {
+        width: 500px;
+    }
+}
+/*
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+     display: none; 
+}
+*/
+
+/*
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+*/
+
+/*
+.load :first-child {
+    background: #19A68C;
+    animation-delay: -1.5s;
+}
+*/
+
+/*
+.load :nth-child(2) {
+    background: #F63D3A;
+    animation-delay: -1s;
+}
+*/
+
+/*
+.load :nth-child(3) {
+    background: #FDA543;
+    animation-delay: -0.5s;
+}
+*/
+
+/*
+.load :last-child {
+    background: #193B48;
+}
+*/
+
+@keyframes loading_logo {
+    0%, 100% {
+/*        transform: translate(0)*/
+        opacity: 0.1;
+    }
+    
+
+    100% {
+/*        transform: translate(0%);*/
+        opacity: 0.6;
+    }
+/*
+        50% {
+        opacity: 0.8;
+    }
+        60% {
+        opacity: 0.2;
+    }
+        70% {
+        opacity: 0.2;
+    }
+        80% {
+        opacity: 0.8;
+    }
+        90% {
+        opacity: 0.2;
+    }
+        100% {
+        opacity: 0.8;
+    }
+*/
+}
+
+.js .load, .js #loader-wrapper {
+  display: block;
+}
+
+                            /*KONIEC PRELOADERA*/
+
+
+
+
+
+
+
 
      /* NAGŁÓWEK */
 
@@ -142,9 +290,11 @@
      #head_content img {
          position: relative;
          margin: 0px auto;
-         max-width: 100vw;
-         max-height: 100vh;
-         z-index: -1;
+         width: 100%;
+/*         height: 100vh;*/
+/*         z-index: -1;*/
+         background: no-repeat center;
+         background-size:cover
      }
 
      .mySlides {
@@ -712,7 +862,7 @@
      #tootsy {
          position: relative;
          margin: 120px auto 0px auto;
-         padding: 65px 0px 20px 0px;
+         padding: 65px 0px 50px 0px;
          color: white;
          background-image: url(../images/tootsy-background.png);
          background-repeat: repeat;
@@ -721,8 +871,8 @@
 
      #contact_box {
          position: relative;
-         width: 970px;
-         margin: 0px auto 0px auto;
+         width: 1000px;
+         margin: 30px auto 0px auto;
      }
 
      #contact_title {
@@ -735,30 +885,32 @@
          z-index: 5;
      }
 
+/*
      iframe {
          position: relative;
          display: inline-block;
          float: left;
          margin-top: 30px;
      }
+*/
 
      #contact {
          position: relative;
          display: inline-block;
+         float: left;
          width: 350px;
-         margin: 30px 0px 10px 0px;
+         padding: 5px;
      }
 
 
      #arounddesign {
-         margin-left: 25px;
          font-size: 22px;
          letter-spacing: 3px;
          font-weight: bold;
      }
 
      address {
-         margin-left: 25px;
+/*         margin-left: 25px;*/
          margin-top: 20px;
          text-decoration: none;
          font-size: 18px;
@@ -768,30 +920,93 @@
 
      #phone {
          margin-top: 20px;
-         margin-left: 25px;
          font-size: 18px;
      }
 
 
      #mail {
          margin-top: 20px;
-         margin-left: 25px;
          font-size: 18px;
          color: white;
      }
-
 
      #mail a {
          color: white;
      }
 
 
+#icon_facebook {
+    background-image: url(../images/icon_facebook.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    border: none;
+    float: left;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+/*    margin: 30px 10px 0px 0px;*/
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#icon_facebook:hover {
+    background-image: url(../images/icon_facebook_hover.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+#icon_instagram {
+    background-image: url(../images/icon_instagram.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    border: none;
+    float: left;
+    padding: 10px;
+    margin-top: 20px;
+/*    margin: 30px 10px 0px 0px;*/
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#icon_instagram:hover {
+    background-image: url(../images/icon_instagram_hover.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    
+}
+
+#icon_google_maps {
+    background-image: url(../images/icon_google_maps.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    border: none;
+    float: left;
+    padding: 10px;
+    margin-top: 20px;
+/*    margin: 30px 10px 0px 0px;*/
+    z-index: 2;
+    transition: 0.5s;
+}
+
+#icon_google_maps:hover {
+    background-image: url(../images/icon_google_maps_hover.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    
+}
+
+
      #contact_form {
          position: relative;
-         width: 670px;
-         margin: 0px 0px 0px 0px;
-         padding: 40px 0px 0px 25px;
          font-size: 18px;
+         padding: 5px;
+/*         border: 2px solid red; */
      }
 
      input.name_and_mail {
@@ -836,7 +1051,7 @@
      input.send_question {
          color: black;
          text-align: center;
-         /*         text-transform: uppercase;*/
+/*                  text-transform: uppercase;*/
          font-weight: bold;
          padding: 10px;
          margin-top: 20px;
