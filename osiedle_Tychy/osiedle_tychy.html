@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- OPIS STRONY, O CZYM ONA JEST -->
+    <meta name="description" content="Biuro Projektowe Around Design. Martyna Pietras - architekt, Bielsko-Biała, architekt wnętrz, architekt krajobrazu">
+    <!-- HASŁA ZWIĄZANE ZE STRONĄ, DZIAŁALNOŚCIĄ POD WYSZUKIWANIE -->
+    <meta name="keywords" content="architekt, architektura architekt wnętrz, biuro, biuro projektowe, studio projektowe, pracownia, wizualizacje, rzudy 3D, wizualizacje wnętrz, wizualizacje zewnętrzne, wizualizacje przyrody, wizualizacje produktu, wnętrza, budynki,  projektowanie, projektowanie wnętrz, projekty, projektanci, domy mieszkalne, budynki, Pietras, Martyna, Martyna Pietras, Bielsko-Biała, architekt w Bielsku">
+    <link rel="shortcut icon" href="../images/icon-arounddesign.ico" type="image/x-icon" />
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!-- KTO JEST AUTOREM TEJ STRONKI -->
+    <meta name="author" content="Piotr Raszka">
+    <!--    CZCIONKA      -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&amp;subset=latin-ext" rel="stylesheet">
+    <!--   <style>@import url('https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext');</style>-->
+    <!-- SITE TITLE -->
+    <title>Around Design Biuro Projektowe</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/css-subpages.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $($(this).attr('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+
+    </script>
+</head>
+
+
+
+
+
+
+<body>
+    <div id="site">
+        <div id="heading">
+            <div id="banner"><img src="images/Osiedle_panel.jpg" alt="" /></div>
+            <div id="logo"><a href="../index.html"><img src="../images/logo_white.png" alt="Logo Around Design"></a></div>
+            <div><a id="back" link href="../index.html#projects_outside"></a></div>
+
+        </div>
+        <div id="content">
+            <div id="title">
+                <p>Wizualizacja osiedla</p>
+            </div>
+            <div id="list_information">
+                <ul>
+                    <li class="information_title">Projekt architektoniczny:</li>
+                    <li class="information_text">ZOBA Architekci</li>
+                    <li class="information_title">Rok:</li>
+                    <li class="information_text">2018</li>
+                    <li class="information_title">Wizualizacja:</li>
+                    <li class="information_text">Around Design <br /> Martyna Pietras</li>
+                    <li class="information_title">Opis:</li>
+                    <li class="information_text">Wizualizacja osiedla w&nbsp;dwóch wariantach</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div id="gallery">
+
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img src="images/wizualizacja%20osedla%20ty%C5%82.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/wizualizacja%20osiedla-%20front.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <!--
+            <div class="column">
+                <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+-->
+                <!--
+            <div class="column">
+                <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+-->
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()"></span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="images/wizualizacja%20osedla%20ty%C5%82.jpg" style="width: 100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="images/wizualizacja%20osiedla-%20front.jpg" style="width: 100%">
+                    </div>
+
+                    <!--
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img3_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img4_wide.jpg" style="width:100%">
+                </div>
+-->
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images/wizualizacja%20osedla%20ty%C5%82.jpg" onclick="currentSlide(1)" alt="Wizualizacja osiedla od strony placu">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/wizualizacja%20osiedla-%20front.jpg" onclick="currentSlide(2)" alt="Wizualizacja osiedla od frontu">
+                    </div>
+
+                    <!--
+                <div class="column">
+                    <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                </div>
+-->
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    
+    
+    
+    
+     <div id="tootsy">
+            <div id="contact_title">
+                <h1>Kontakt</h1> </div>
+            <div id="contact_box">
+                <!--                <div id="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.672357605494!2d18.96843911512799!3d49.99875192769019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716bbcb169e8e9f%3A0xaebfb332a8afd8cf!2sAround+Design!5e0!3m2!1spl!2spl!4v1541272569436" width="300" height="220" frameborder="0" style="border:0" allowfullscreen></iframe></div>-->
+                <div id="contact">
+                    <h3 id="arounddesign">Around Design</h3>
+                    <div id="adress"><address>ul. Zielona 13 <br />
+                            43-215 Jankowice k./Pszczyny</address></div>
+                    <div id="phone">tel. +48 664 807 316</div>
+                    <div id="mail"><a href="mailto:around.design@outlook.com">e-mail: around.design@outlook.com</a></div>
+                    <a href="https://web.facebook.com/arounddesign.m.pietras/" target="_blank">
+                        <figure id="icon_facebook"></figure>
+                    </a>
+                    <a href="https://www.instagram.com/around.design/" target="_blank">
+                        <figure id="icon_instagram"></figure>
+                    </a>
+                    <a href="https://goo.gl/maps/6qT1ELsRz5p" target="_blank">
+                        <figure id="icon_google_maps"></figure>
+                    </a>
+                </div>
+                <div>
+                    <?php
+//--- początek formularza ---
+if(empty($_POST['submit'])) {
+?>
+                        <table id="contact_form">
+                            <form action="" method="post">
+                                <tr>
+                                    <td>Imię i Nazwisko:</td>
+                                    <td>
+                                        <input class="name_and_mail" type="text" name="formName" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail:</td>
+                                    <td>
+                                        <input class="name_and_mail" type="text" name="formEmail" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Treść wiadomości:</td>
+                                    <td>
+                                        <textarea name="formText"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>
+                                        <input class="send_question" type="submit" name="submit" value="Wyślij formularz" />
+                                    </td>
+                                </tr>
+                            </form>
+                        </table>
+                        <!--
+<?php
+} else {
+
+//twoje dane
+$email = 'raszkapiotr@gmail.com';
+
+//dane z formularza
+$formName = $_POST['formName'];
+$formEmail = $_POST['formEmail'];
+$formText = $_POST['formText'];
+
+if(!empty($formName) && !empty($formEmail) && !empty($formText)) {
+
+//--- początek funkcji weryfikującej adres e-mail ---
+function checkMail($checkmail) {
+  if(filter_var($checkmail, FILTER_VALIDATE_EMAIL)) {
+    if(checkdnsrr(array_pop(explode("@",$checkmail)),"MX")){
+        return true;
+      }else{
+        return false;
+      }
+  } else {
+    return false;
+  }
+}
+//--- koniec funkcji ---
+if(checkMail($formEmail)) {
+  //dodatkowe informacje: ip i host użytkownika
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+ 
+  //tworzymy szkielet wiadomości
+  //treść wiadomości
+   $mailText = "Treść wiadomości:\n$formText\nOd: $formName, $formEmail ($ip, $host)";
+    //$mailText = "Treść wiadomości: $formText Od: $formName, $formEmail ($ip, $host)";
+ 
+  //adres zwrotny
+    $mailHeader = "From: $formName <$formEmail>";
+    //$mailHeader .= "Content-type: text/plain; charset=utf-8rn";[/code]
+  // $mailHeader = "Content-type: text/plain; charset=utf-8";
+ 
+  //funkcja odpowiedzialna za wysłanie e-maila
+  @mail($email, 'Formularz kontaktowy', $mailText, $mailHeader) or die('Błąd: wiadomość nie została wysłana');
+ 
+  //komunikat o poprawnym wysłaniu wiadomości
+  echo 'Wiadomość została wysłana';
+} else {
+  echo 'Adres e-mail jest niepoprawny';
+}
+
+} else {
+  //komunikat w przypadku nie powodzenia
+  echo 'Wypełnij wszystkie pola formularza';
+}
+
+//--- koniec formularza ---
+}
+?>
+-->
+                </div>
+            </div>
+        </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
+
+</body>
+
+</html>
