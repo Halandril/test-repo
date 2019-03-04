@@ -1,0 +1,5 @@
+- program mapCreator FREE możesz pobrać ze strony www.mapcreator.pl, zainstalować na własnym serwerze i utworzyć mapę interaktywną,
+- możesz zmodyfikować program we własnym zakresie i do własnych celów,
+- nie możesz usunąć loga mapCreatora,
+- nie możesz stworzyć, oferować i sprzedawać programu powstałego na bazie kodu źródłowego mapCreatora,
+- prawa autorskie do programu mapCreator należą do firmy Propero.
