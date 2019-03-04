@@ -1,0 +1,3 @@
+maptranslations = _.extend(maptranslations, {
+	
+});
