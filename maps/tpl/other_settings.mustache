@@ -1,0 +1,15 @@
+<form role="form">
+	<div class="form-group col-md-8">
+		<label for="mapsettings_apikey">{{trans 'Google maps API key'}}</label>
+
+		<input id="mapsettings_apikey" type="text" class="form-control" can-value='mapsettings.apikey'>
+		<p class="help-block">
+			{{trans 'Its not necessary but recommended'}}.<br>
+			{{trans 'More info'}}: <a href="https://developers.google.com/maps/documentation/javascript/tutorial?hl=pl#api_key" target="_blank">https://developers.google.com/maps/documentation/javascript/tutorial?hl=pl#api_key</a>
+		</p>
+	</div>
+	
+	<div class="form-group col-md-8">
+		<button class="btn btn-primary btn-lg" id="savesettings">{{trans 'Save'}}</button> <button class="btn btn-default btn-lg canceledit">{{trans 'Cancel'}}</button>
+	</div>
+</form>

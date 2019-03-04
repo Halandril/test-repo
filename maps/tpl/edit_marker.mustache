@@ -1,0 +1,103 @@
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<p class="navbar-text white-text">{{trans 'Marker edit form'}}</p>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+	<li class="active"><a href="#tab_basic" data-toggle="tab"><i class="glyphicon glyphicon-asterisk"></i> {{trans 'Base data'}}</a></li>
+	<li><a href="#tab_description" data-toggle="tab"><i class="glyphicon glyphicon-comment"></i> {{trans 'Description'}}</a></li>
+	<li><a href="#tab_image" data-toggle="tab"><i class="glyphicon glyphicon-picture"></i> {{trans 'Image'}}</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+	
+	<!-- basic tab -->
+	<div class="tab-pane active" id="tab_basic">
+
+		<div class="form-group">
+			<label for="object_name">{{trans 'Name (title)'}}</label>
+			<input type="text" can-value='feature.data.name' class="form-control" id="object_name" placeholder="{{trans 'Enter marker name (title)'}}">
+		</div>
+
+		<div class="form-group">
+			<label>{{trans 'Position'}}</label>
+			<p class="form-control-static">
+				<input type="hidden" can-value='feature.data.position'>
+				{{#if feature.data.position}}
+					<p class="help-block">{{trans 'Coordinates'}}: <span class="coordinates_disp">{{feature.data.position}}</span></p>
+					<div class="alert alert-info">{{trans "Drag a marker if you want modify its position."}}</div>
+					
+				{{else}}
+					<div class="alert alert-info">{{trans "Click on a map in required position to place a marker."}}</div>
+				{{/if}}
+			</p>
+		</div>
+
+		<div class="form-group">
+			<label>{{trans 'Icon on map'}}</label>
+			<p class="form-control-static">
+				
+				{{#if feature.data.icon_url}}
+					<img src="{{feature.data.icon_url}}" class="edit_feature_icon">
+				{{/if}}
+					<button class="btn btn-success btn-sm" id="select_feature_icon">{{trans 'Choose'}}...</button>
+			</p>
+		</div>
+
+	</div>
+	
+	<!-- description tab -->
+	<div class="tab-pane" id="tab_description">
+		<div class="form-group">
+			<label for="object_description">{{trans 'Description'}}</label>
+			<textarea class="form-control" id="object_description" rows="10">{{feature.data.description}}</textarea>
+		</div>
+	</div>
+
+	<!-- image tab -->
+	<div class="tab-pane" id="tab_image">
+		<div class="form-group">
+			<label>{{trans 'Image'}}</label>
+
+			<p class="form-control-static">
+				<span class="btn btn-success fileinput-button">
+					<i class="glyphicon glyphicon-open"></i>
+					<span>{{trans 'Upload image'}}</span>
+					<!-- The file input field used as target for the file upload widget -->
+					<input id="fileupload" type="file" name="files">
+				</span>
+			</p>
+
+			<br>
+			<!-- The global progress bar -->
+			<div id="progress" class="progress invisible">
+				<div class="progress-bar progress-bar-info"></div>
+			</div>
+		
+		</div>
+
+		<div class="form-group">
+			<!-- The container for the uploaded files -->
+			<div id="uploaded_image" class="form-control-static">
+				{{#if feature.data.image_thumb}}
+					<img src="{{feature.data.image_thumb}}" class="img-thumbnail">
+				{{/if}}
+			</div>
+
+			<p class="form-control-static">
+				{{#if feature.data.image_thumb}}
+					<button class="btn btn-warning btn-xs" id="remove_image"><i class="glyphicon glyphicon-remove"></i>{{trans 'Remove image'}}</button>
+				{{/if}}
+			</p>
+
+		</div>
+	</div>
+</div>
+
+<hr>
+<div class="text-center">
+	<button class="btn btn-primary btn-lg" id="savemarker">{{trans 'Save'}}</button> <button class="btn btn-default btn-lg canceledit">{{trans 'Cancel'}}</button>
+</div>

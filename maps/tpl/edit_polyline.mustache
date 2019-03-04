@@ -1,0 +1,90 @@
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<p class="navbar-text white-text">{{trans 'Shape edit form'}}</p>
+	</div>
+</nav>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+	<li class="active"><a href="#tab_basic" data-toggle="tab"><i class="glyphicon glyphicon-asterisk"></i> {{trans 'Base data'}}</a></li>
+	<li><a href="#tab_style" data-toggle="tab"><i class="glyphicon glyphicon-pencil"></i> {{trans 'Style'}}</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+	
+	<!-- basic tab -->
+	<div class="tab-pane active" id="tab_basic">
+
+		<div class="form-group">
+			<label for="object_name">{{trans 'Name'}}</label>
+			<input type="text" can-value='feature.data.name' class="form-control" id="object_name" placeholder="{{trans 'Enter shape name'}}">
+		</div>
+
+		<div class="form-group">
+			<label>{{trans 'Path'}}</label>
+			<p class="form-control-static">
+				
+				<div class="alert alert-info">
+					{{trans "Click on a map to add vertex to path."}}<br>
+					{{trans "Click on a vertex if you want to remove it."}}<br>
+					{{trans "Drag wertex if you want change its position."}}
+				</div>
+	
+			</p>
+		</div>
+
+	</div>
+
+	<!-- style tab -->
+	<div class="tab-pane" id="tab_style">
+
+		<div class="form-group">
+			<label for="stroke_color">{{trans 'Stroke color'}}</label>
+				
+				<div class="input-group color-input">
+					<input type="text" value='{{feature.data.strokeColor}}' class="form-control" id="stroke_color">
+					
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">{{trans 'Pick'}}</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><div id="colorpalette"></div></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+
+		<div class="form-group">
+			<label for="stroke_opacity">{{trans 'Stroke opacity'}}</label>
+			<p class="form-control-static">
+				<span id="opacity_val"></span>% &nbsp;<input type="text" class="form-control" id="stroke_opacity">
+			</p>
+		</div>
+
+		<div class="form-group">
+			<label for="stroke_weight">{{trans 'Stroke weight'}}</label>
+
+			<div class="input-group weight-input">
+					<input type="text" can-value='feature.data.strokeWeight' class="form-control" id="stroke_weight">
+					
+					<div class="input-group-btn">
+						<button class="btn btn-default" disabled="disabled">px</button>
+						<button id="weight_up" class="btn btn-success"><i class="glyphicon glyphicon-arrow-up"></i></button>
+						<button class="btn btn-success" id="weight_down"><i class="glyphicon glyphicon-arrow-down"></i></button>
+					</div>
+				</div>
+
+		</div>
+
+		{{#if sub_template}}
+			{{>//../tpl/edit_polygon_sub.mustache}}
+		{{/if}}
+
+	</div>
+	
+</div>
+
+<hr>
+<div class="text-center">
+	<button class="btn btn-primary btn-lg" id="savepoly">{{trans 'Save'}}</button> <button class="btn btn-default canceledit btn-lg">{{trans 'Cancel'}}</button>
+</div>

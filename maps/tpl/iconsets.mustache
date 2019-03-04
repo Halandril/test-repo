@@ -1,0 +1,63 @@
+<div class="row">
+	<div class="col-md-10">
+		<div class="alert alert-info">
+			{{transp 'W wersji FREE możesz używać jedynie ikon z niżej dostępnych zestawów i nie możesz nimi zarządzać.'}}
+			{{transp 'W wersji PRO możesz zarządzać zestawami i dodawać własne ikony. Do wykorzystania jest też dużo bogatsza kolekcja (ponad 1000) wbudowanych ikon.'}}
+			<b><a href="http://www.mapcreator.pl/index.php?action=mapcreator_pro&go=pro">{{transp 'Przejdź na wersję PRO'}} <i class="glyphicon glyphicon-send"></i></a></b>
+		</div>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-md-7">
+		<div id="iconset_ctrl"></div>
+	</div>
+
+	<div class="col-md-5">
+		
+		<!-- dodaj zestaw -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<button disabled="disabled" id="add_new_iconset" type="button" class="btn btn-default btn-block"><i class="glyphicon glyphicon-plus-sign"></i> {{transp 'Zdefiniuj nowy zestaw'}}</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- usun zestaw -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<button disabled="disabled" id="remove_selected_set" type="button" class="btn btn-default btn-block"><i class="glyphicon glyphicon-remove-sign"></i> {{transp 'Usuń wybrany zestaw'}}</button>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- usuniecie ikony -->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<button disabled="disabled" id="remove_selected_icon" type="button" class="btn btn-default btn-block"><i class="glyphicon glyphicon-remove"></i> {{transp 'Usuń wybraną ikonę'}}</button>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-3">
+
+		<button disabled="disabled" type="button" class="btn btn-default"><i class="glyphicon glyphicon-open"></i> {{trans 'Upload icons to this set'}}</button>
+
+	</div>
+
+	<div class="col-md-6">
+		<button disabled="disabled" id="add_icon_url" type="button" class="btn btn-default"><i class="glyphicon glyphicon-link"></i> {{trans 'Add icon to this set from url'}}</button>
+
+	</div>
+
+</div>

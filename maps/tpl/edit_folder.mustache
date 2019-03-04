@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<p class="navbar-text white-text">{{trans 'Category edit form'}}</p>
+	</div>
+</nav>
+
+<div class="form-group">
+	<label for="object_name">{{trans 'Name'}}</label>
+	<input type="text" can-value='feature.data.name' class="form-control" id="object_name" placeholder="{{trans 'Enter category name'}}">
+</div>
+
+<div class="form-group">
+	<label>{{trans 'Icon in menu'}}</label>
+
+	<p class="form-control-static">
+		{{#if feature.data.menu_icon_url}}
+			<img src="{{feature.data.menu_icon_url}}" class="edit_feature_menu_icon">
+		{{/if}}
+			<button class="btn btn-success btn-sm" id="select_feature_menu_icon">{{trans 'Choose'}}...</button>
+	</p>
+</div>
+
+<div class="form-group">
+	<label>{{trans 'Other options'}}</label>
+	<div class="checkbox">
+		<input type='checkbox' can-value='feature.data.default_display' /> {{trans 'Checked by default'}}
+	</div>
+</div>
+
+<hr>
+<div class="text-center">
+	<button class="btn btn-primary btn-lg" id="savefold">{{trans 'Save'}}</button> <button class="btn btn-default btn-lg canceledit">{{trans 'Cancel'}}</button>
+</div>

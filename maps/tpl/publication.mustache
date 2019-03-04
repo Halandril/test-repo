@@ -1,0 +1,22 @@
+<form role="form">
+	<div class="form-group col-md-8">
+		<label for="embed_code">{{trans 'Embed code'}}</label>
+
+		<p class="help-block">
+			{{trans 'To embed this map in your own website, copy the following HTML and paste it in the source code for your page'}}.
+		</p>
+
+		<textarea class="form-control" id="embed_code" rows="3">{{embed}}</textarea>
+
+		<p class="help-block">
+			{{{trans 'You can change width and height values to fit size on your site'}}}.
+		</p>
+
+	</div>
+
+	<div class="form-group col-md-8">
+		<label for="direct_mapurl">{{trans 'Direct map url'}}</label>
+
+		<input id="direct_mapurl" type="text" class="form-control" value="{{mapurl}}">
+	</div>
+</form>

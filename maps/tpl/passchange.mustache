@@ -1,0 +1,47 @@
+<form role="form" action="admin.php" id="passchange_form" method="post">
+	
+<div class="row">
+	<div class="form-group col-md-5">
+		<label for="type_pass">{{trans 'Type new password'}}</label>
+
+		<input type="password" id="type_pass" name="new_password" class="form-control">
+
+		<p class="help-block">
+			{{trans '6 characters at least'}}.
+		</p>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-group col-md-5">
+		<label for="re_type_pass">{{trans 'Retype new password'}}</label>
+
+		<input type="password" id="re_type_pass" name="re_new_password" class="form-control">
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-group col-md-5">
+		<label for="type_login">{{trans 'Login'}}</label>
+
+		<p class="help-block">
+			{{trans 'You can change login too'}}.
+		</p>
+		
+		<input type="text" id="type_login" name="new_login" class="form-control" value="{{username}}">
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-group col-md-5 text-center">
+		<button class="btn btn-primary" id="savepass">{{trans 'Save'}}</button>
+		
+		<p class="help-block">
+			{{trans 'You will be redirected to login page after submit'}}.
+		</p>
+	</div>
+</div>
+
+</form>

@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		{{#if dismiss}}
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		{{/if}}
+		<form role="form">
+			<div class="form-group">
+				<label>{{trans 'Icons set'}}:</label>
+				<select class="form-control iconset_change">
+				{{#iconsets}}
+					<option value={{id}} {{#if is_selected}}selected{{/if}}>{{name}}</option>
+				{{/iconsets}}
+				</select>
+			</div>
+		</form>
+
+	</div>
+	
+	<div class="panel-body actual_icons_box">
+		<div id="actual_icons"></div>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<p class="navbar-text white-text">{{trans 'Starting map settings edit'}}</p>
+	</div><!-- /.container-fluid -->
+</nav>
+
+<div class="form-group">
+	<label>{{trans 'Center'}}</label>
+	<p class="form-control-static">
+		<div class="alert alert-info">{{trans "Pan a map to set starting map center"}}</div>
+		<p class="help-block">{{trans 'Center coordinates'}}: <span class="coordinates_disp">{{mapsettings.data.center}}</span></p>
+	</p>
+</div>
+
+<div class="form-group">
+	<label>{{trans 'Zoom'}}</label>
+	<p class="form-control-static">
+		<div class="alert alert-info">{{trans "Zoom a map to set starting zoom level"}}</div>
+		<p class="help-block">{{trans 'Zoom'}}: <span class="coordinates_disp">{{mapsettings.data.zoom}}</span></p>
+	</p>
+</div>
+
+<div class="form-group">
+	<label>{{trans 'Map type'}}</label>
+	<p class="form-control-static">
+		<div class="alert alert-info">{{trans "Change map type to set starting map type"}}</div>
+		<p class="help-block">{{trans 'Map type'}}: <span class="coordinates_disp">{{mapsettings.data.maptype}}</span></p>
+	</p>
+</div>
+
+<div class="text-center">
+	<button class="btn btn-primary btn-lg" id="savemapstart">{{trans 'Save'}}</button> <button class="btn btn-default btn-lg canceledit">{{trans 'Cancel'}}</button>
+</div>

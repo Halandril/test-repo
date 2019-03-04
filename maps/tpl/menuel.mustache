@@ -1,0 +1,23 @@
+<div class="menuel-title-container">
+	<div class="menuel-title">
+	
+		{{#if data.menu_icon_url}}
+			<div class="menuel-cell menuel-icon-div">
+				<img src="{{{data.menu_icon_url}}}" class="menuel-icon">
+			</div>
+		{{/if}}
+
+		{{#if state.checkable}}
+			<div class="menuel-cell">
+				<input type='checkbox' class="menuel-checkbox" can-value='state.display' />
+			</div>
+		{{/if}}
+
+		<div class="menuel-cell">
+			<span class="menuel-name">{{data.name}}</span>
+		</div>
+	</div>
+</div>
+
+<div class="menuel-desc"></div>
+<div class="menuel-content"></div>

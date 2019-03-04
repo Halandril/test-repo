@@ -1,0 +1,31 @@
+<nav class="navbar navbar-inverse" role="navigation" id="map-oper-nav">
+  <div class="container-fluid">
+
+	 <!-- Collect the nav links, forms, and other content for toggling -->
+	 <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+  
+		  <li class="dropdown">
+			<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">{{trans 'Add new'}} <b class="caret"></b></button>
+			<ul class="dropdown-menu">
+				<li><a href="#" class="new_object_btn" data-otype="Marker"><img src="lay/pico_marker.png"> {{trans 'Marker'}}</a></li>
+				<li><a href="#" class="new_object_btn" data-otype="Polyline"><img src="lay/pico_path.png"> {{trans 'Path'}}</a></li>
+				<li><a href="#" class="new_object_btn" data-otype="Polygon"><img src="lay/pico_area.png"> {{trans 'Area'}}</a></li>
+			</ul>
+		  </li>
+		</ul>
+	  
+		<ul class="nav navbar-nav navbar-right">
+		  <li><p class="navbar-text">{{trans 'Selected object'}}:</p></li>
+		  <li>
+
+				<div class="btn-group">
+					<button type="button"  class="btn btn-default navbar-btn modify_object_btn edit_object_btn" disabled="disabled">{{trans 'Edit'}}</button>
+					<button type="button" class="btn btn-default navbar-btn modify_object_btn delete_object_btn" disabled="disabled">{{trans 'Delete'}}</button>
+				</div>
+
+		  </li>
+		</ul>
+	 </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

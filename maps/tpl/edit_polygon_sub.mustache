@@ -1,0 +1,21 @@
+<div class="form-group">
+	<label for="fill_color">{{trans 'Fill color'}}</label>
+
+	<div class="input-group color-input">
+			<input type="text" value='{{feature.data.fillColor}}' class="form-control" id="fill_color">
+			
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">{{trans 'Pick'}}</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li><div id="colorpalette2"></div></li>
+				</ul>
+			</div>
+		</div>
+</div>
+
+<div class="form-group">
+	<label for="fill_opacity">{{trans 'Fill opacity'}}</label>
+	<p class="form-control-static">
+		<span id="fill_opacity_val"></span>% &nbsp;<input type="text" class="form-control" id="fill_opacity">
+	</p>
+</div>
