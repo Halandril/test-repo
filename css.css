@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+}
+
+
+#contain {
+    width: 100%;
+    /*    border: 1px solid red;*/
+}
+
+
+#logo {
+    position: relative;
+    max-width: 40%;
+    margin: 0px auto;
+    /*    left: 5%;    */
+    /*        border: 1px solid red;*/
+}
+
+#tytul {
+    position: relative;
+    margin: 0px auto;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 50;
+    /*            border: 1px solid red;*/
+}
+
+#instrukcja {
+    position: relative;
+    margin: 10px auto 10px auto;
+    width: 380px;
+    /*            border: 1px solid red;*/
+}
+
+#maps {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 80%;
+    left: 10%;
+
+    /*    border: 1px solid red;*/
+}
