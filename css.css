@@ -11,9 +11,8 @@
 
 #logo {
     position: relative;
-    max-width: 40%;
     margin: 0px auto;
-    /*    left: 5%;    */
+    margin-left: 8%;    
     /*        border: 1px solid red;*/
 }
 
@@ -26,6 +25,7 @@
     margin-bottom: 30px;
     font-weight: bold;
     text-shadow: 50;
+    color: darkblue;
     /*            border: 1px solid red;*/
 }
 
@@ -33,6 +33,7 @@
     position: relative;
     margin: 10px auto 10px auto;
     width: 380px;
+    color: royalblue;
     /*            border: 1px solid red;*/
 }
 
